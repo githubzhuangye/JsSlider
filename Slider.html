@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="myContainer"></div>
+<script type="text/javascript" src="js/Slider.js"></script>
+<script type="text/javascript">
+    window.onload =function(){
+        //初始化控件
+        var slider = new Slider({
+            parent: "#myContainer",
+            data:[{
+                img: "img/1.jpg",
+                title: "照片1",
+                content: "书读百遍，其义自见"
+            },
+                {
+                    img: "img/2.jpg",
+                    title: "照片2",
+                    content: "有梦想，才有远方"
+                },
+                {
+                    img: "img/3.jpg",
+                    title: "照片3",
+                    content: "你还有很多未完成的梦，怎么能停下脚步"
+                },
+                {
+                    img: "img/4.jpg",
+                    title: "web前端：庄树杰",
+                    content: "电话：15652922740，邮箱：xinlangzhuangye@sina.com"
+                },
+                {
+                    img: "img/5.jpg",
+                    title: "照片5",
+                    content: "失去的东西最终都能回到我们的身边，虽然有时并不以我们期待的方式。"
+                },{
+                    img: "img/6.jpg",
+                    title: "照片6",
+                    content: "人生已经如此艰难，有些事情就不要拆穿了"
+                }],
+            auto:1
+        });
+    };
+
+</script>
+</body>
+</html> 
